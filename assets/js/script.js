@@ -11,6 +11,9 @@ function createGrid() {
         for (let j = 0; j < grid; j++) {
             const gridSquare = document.createElement("div");
             gridSquare.classList.add("gridSquare");
+            gridSquare.addEventListener("mouseover", (e) => e.target.classList.add("hovered"));
+            gridSquare.addEventListener("mouseleave", (e) => e.target.classList.remove("hovered"));
+
             row.appendChild(gridSquare);
         }
     }

@@ -29,3 +29,7 @@ body {
     min-width: 20px;
     min-height: 20px;
 }
+
+#grid .gridSquare.hovered {
+    background-color: black;
+}
