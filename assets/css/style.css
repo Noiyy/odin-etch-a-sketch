@@ -24,12 +24,46 @@ body {
     align-items: center;
 }
 
+#main {
+    padding: 32px;
+}
+
+#grid {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #B20101;
+}
+
 #grid .gridSquare {
-    border: 1px solid black;
-    min-width: 20px;
-    min-height: 20px;
+    border: 1px solid lightgray;
 }
 
 #grid .gridSquare.hovered {
     background-color: black;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+
+    padding: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #B20101;
+    background-color: white;
+    border: 4px solid #B20101;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #B20101;
+    color: white;
+    border-radius: 16px;
+}
+
+button.gridSize {
+    margin-bottom: 32px;
 }
