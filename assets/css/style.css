@@ -27,6 +27,7 @@ body {
 
 #main {
     padding: 32px;
+    flex: 1;
 }
 
 #grid {
@@ -37,7 +38,7 @@ body {
 }
 
 #grid .gridSquare {
-    border: 1px solid lightgray;
+    border: 1px solid gainsboro;
 }
 
 .gridHeader {
@@ -99,4 +100,20 @@ button:hover {
     background-color: #B20101;
     color: white;
     border-radius: 16px;
+}
+
+footer {
+    padding: 16px;
+    background-color: gainsboro;
+}
+
+footer a {
+    color: black;
+    text-decoration-color: #B20101;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #B20101
 }

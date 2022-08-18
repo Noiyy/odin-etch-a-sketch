@@ -11,12 +11,14 @@ createGrid();
 gridSizeBtn.addEventListener("click", changeGrid);
 monoBtn.addEventListener("click", () => randomCol = false);
 randomBtn.addEventListener("click", () => randomCol = true);
-resetBtn.addEventListener("click", () => changeGrid());
+resetBtn.addEventListener("click", () => changeGrid(grid));
 
-function changeGrid() {
+function changeGrid(size=0) {
     do {
-        grid = parseInt(prompt("Enter desired grid size:", 16));
-    } while (grid > 100 || grid < 0);
+        if (size > 0) grid = size;
+        else grid = parseInt(prompt("Enter desired grid size:\n(max 100)", 16));
+        if (!grid) grid = 16;
+    } while (grid > 100 || grid <= 0);
 
     while (gridContainer.hasChildNodes()) gridContainer.firstChild.remove();
     createGrid();
