@@ -5,98 +5,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 500px) {
-    #main {
-        padding: 16px !important;
-    }
-    .contentContainer {
-        gap: 18px !important;
-        flex-flow: column-reverse wrap;
-        align-items: center;
-    }
-    #grid {
-        width: 280px !important;
-        height: 280px !important;
-    }
-    .gridSidebar {
-        max-width: 90% !important;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: space-between !important;
-        gap: 16px;
-    }
-    .gridSidebar button {
-        width: 45% !important;
-        align-self: stretch;
-    }
-    button {
-        font-size: 1em !important;
-        overflow-wrap: break-word;
-    }
-    .gridSidebar h1 {
-        font-size: 1.3em !important;
-        max-width: 100px;
-        margin: 0 auto !important;
-    }
-}
-
-@media (min-width: 501px)
-        and (max-width: 640px) {
-    #main {
-        padding: 16px !important;
-    }
-    .contentContainer {
-        gap: 18px !important;
-        flex-flow: column-reverse wrap;
-        align-items: center;
-    }
-    #grid {
-        width: 300px !important;
-        height: 300px !important;
-    }
-    .gridSidebar {
-        max-width: 90% !important;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: space-between !important;
-        gap: 16px;
-    }
-    .gridSidebar button {
-        width: 45% !important;
-    }
-    button {
-        font-size: 1.2em !important;
-    }
-    .gridSidebar h1 {
-        font-size: 2.2em !important;
-        max-width: 150px;
-        margin: 0 auto !important;
-    }
-}
-
-@media (min-width: 641px)
-        and (max-width: 1007px) {
-    #main {
-        padding: 16px !important;
-    }
-    .contentContainer {
-        gap: 18px !important;
-    }
-    #grid {
-        width: 400px !important;
-        height: 400px !important;
-    }
-    .gridSidebar {
-        max-width: 210px !important;
-    }
-    button {
-        font-size: 1.25em !important;
-    }
-    .gridSidebar h1 {
-        font-size: 2.5em !important;
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -170,6 +78,12 @@ body {
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 button {
     cursor: pointer;
     padding: 8px;
@@ -191,7 +105,6 @@ button:hover {
 footer {
     padding: 16px;
     background-color: gainsboro;
-    text-align: center;
 }
 
 footer a {
