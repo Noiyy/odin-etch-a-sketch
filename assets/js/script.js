@@ -12,6 +12,7 @@ gridSizeBtn.addEventListener("click", changeGrid);
 monoBtn.addEventListener("click", () => randomCol = false);
 randomBtn.addEventListener("click", () => randomCol = true);
 resetBtn.addEventListener("click", () => changeGrid(grid));
+screen.orientation.addEventListener("change", () => changeGrid(grid));
 
 function changeGrid(size=0) {
     do {
